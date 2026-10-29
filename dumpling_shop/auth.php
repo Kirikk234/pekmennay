@@ -15,7 +15,7 @@ if (isLoggedIn()) { header('Location: /pekmenay/dumpling_shop/profile.php'); exi
       <input type="hidden" name="action" value="<?= $mode ?>">
       <?php if ($mode === 'register'): ?>
         <label>Ваше имя <input type="text" name="name" placeholder="Иван" required></label>
-        <label>Телефон <input type="tel" name="phone" placeholder="+7 (999) 123-45-67"></label>
+        <label>Телефон <input type="tel" name="phone" placeholder="+375 (29) 123-45-67"></label>
       <?php endif; ?>
       <label>Email <input type="email" name="email" placeholder="ivan@example.ru" required></label>
       <label>Пароль <input type="password" name="password" placeholder="Минимум 6 символов" required></label>

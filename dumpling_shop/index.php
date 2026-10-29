@@ -29,7 +29,7 @@ $cats = array_unique(array_column($products, 'category'));
         <h3><?= e($p['name']) ?></h3>
         <p class="desc"><?= e($p['description']) ?></p>
         <div class="card-bottom">
-          <span class="price"><?= number_format($p['price'], 0, '.', ' ') ?> ₽</span>
+          <span class="price"><?= number_format($p['price'], 2, '.', ' ') ?> BYN</span>
           <span class="weight"><?= (int)$p['weight'] ?> г</span>
         </div>
         <button class="btn btn-primary add-to-cart" data-id="<?= (int)$p['id'] ?>">В корзину</button>

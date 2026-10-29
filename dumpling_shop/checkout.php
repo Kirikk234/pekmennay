@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const res = await fetch('/pekmenay/dumpling_shop/api.php?action=get');
   const data = await res.json();
-  document.getElementById('checkout-total').textContent = (data.total || 0).toLocaleString('ru-RU') + ' ₽';
+  document.getElementById('checkout-total').textContent = (data.total || 0).toLocaleString('ru-RU', {minimumFractionDigits: 2}) + ' BYN';
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
